@@ -14,11 +14,18 @@ app.use('/uploads', express.static('uploads'));
 app.use(bodyParser.json());
 app.use(cors());
 // Create a MySQL connection
+// const db = mysql.createConnection({
+//   host: 'localhost',
+//   user: 'root',
+//   password: '',
+//   database: 'grocery_db',
+// });
+//server
 const db = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: '',
-  database: 'grocery_db',
+  host: 'bznjtjdoyxhzlo4tha04-mysql.services.clever-cloud.com',
+  user: 'ui3mo70zfmr8nauy',
+  password: 'HxfglihS8GEBrVrujHfc',
+  database: 'bznjtjdoyxhzlo4tha04',
 });
 
 db.connect((err) => {
